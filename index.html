@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-font-size="16" data-font-family="mono">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#050805" />
+    <link rel="icon" href="data:," />
+    <title>Сапёр: Night Shift</title>
+    <script type="module" crossorigin src="./assets/index-Dns5B70z.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CnWwTgUW.css">
+  </head>
+  <body>
+    <noscript lang="ru">
+      <p>Для запуска игры включите JavaScript и обновите страницу.</p>
+    </noscript>
+    <div id="app" class="terminal">
+      <header class="terminal__header" aria-hidden="true">
+        <span id="brand" class="terminal__brand"></span>
+        <span id="terminal-meta" class="terminal__meta"></span>
+      </header>
+      <main id="screen" class="terminal__screen" data-phase="boot">
+        <pre id="boot-log" class="boot-log"></pre>
+        <div id="shift-header" class="shift-header" data-testid="shift-header" hidden>
+          <span id="header-preset" class="shift-header__preset" data-testid="header-preset"></span>
+          <span id="header-clock" class="shift-header__clock" data-testid="header-clock"></span>
+          <span id="header-safe" data-testid="header-safe"></span>
+          <span id="header-flags" data-testid="header-flags"></span>
+          <span id="header-incidents" data-testid="header-incidents"></span>
+          <span id="header-pauses" data-testid="header-pauses"></span>
+          <span id="header-alarm" class="shift-header__alarm" data-testid="header-alarm" hidden></span>
+        </div>
+        <div id="tickets" class="tickets" data-testid="tickets" lang="ru" hidden></div>
+        <div
+          id="board-frame"
+          class="board-frame"
+          data-testid="board-frame"
+          hidden
+        >
+          <div
+            id="board-col-rulers"
+            class="board-rulers board-rulers--cols"
+            data-testid="board-col-rulers"
+            aria-hidden="true"
+          ></div>
+          <div
+            id="board-row-rulers"
+            class="board-rulers board-rulers--rows"
+            data-testid="board-row-rulers"
+            aria-hidden="true"
+          ></div>
+          <div
+            id="board"
+            class="port-board"
+            data-testid="port-board"
+            role="grid"
+            lang="ru"
+            tabindex="0"
+            hidden
+          ></div>
+        </div>
+        <p id="focus-line" class="focus-line" data-testid="focus-line" hidden></p>
+        <pre
+          id="report"
+          class="report"
+          data-testid="report"
+          role="status"
+          aria-live="polite"
+          lang="ru"
+          hidden
+        ></pre>
+        <pre id="phase-content" class="phase-content" data-testid="phase-content"></pre>
+        <div
+          id="journal"
+          class="journal"
+          data-testid="journal"
+          role="log"
+          aria-live="off"
+          lang="ru"
+        ></div>
+        <p
+          id="prompt-line"
+          class="prompt-line"
+          data-testid="prompt-line"
+          role="textbox"
+          tabindex="0"
+          lang="ru"
+        >
+          <span id="prompt" class="prompt" aria-hidden="true"></span><span id="input-buffer" class="input-buffer"></span><span id="cursor" class="cursor" aria-hidden="true"></span>
+        </p>
+        <p id="legend" class="legend" data-testid="legend" lang="ru"></p>
+      <div id="hint" class="hint" data-testid="hint" lang="ru" hidden></div>
+      </main>
+      <div id="overlays" class="overlays" data-testid="overlays" hidden></div>
+      <div id="crt" class="crt" data-testid="crt" aria-hidden="true"></div>
+      <div id="live-polite" class="sr-only" role="status" aria-live="polite" lang="ru"></div>
+      <div id="live-assertive" class="sr-only" role="alert" aria-live="assertive" lang="ru"></div>
+    </div>
+  </body>
+</html>
